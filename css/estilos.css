@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+.estiloselect {
+	width: 172px;
+	padding: 6px;
+	margin-bottom: 12px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px; 
+	height: 34px;
+	background-color:#ddd;
+	
+}
+.estiloinput {
+	width: 182px;
+	padding: 6px;
+	margin-bottom: 12px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 6px; 
+	height: 24px;
+	background-color:#ddd;
+	
+}
+.estiloinput2 {
+	width: 212px;
+	padding: 6px;
+	margin-bottom: 6px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 6px; 
+	height: 24px;
+	background-color:#ddd;
+	
+}
+.estiloinput3 {
+	width: 92px;
+	padding: 6px;
+	margin-bottom: 6px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 6px; 
+	height: 24px;
+	background-color:#ddd;
+	
+}
+.estiloareatexto {
+	width: 402px;
+	padding: 4px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	border: 1px solid #739E6C;
+	border-radius: 6px; 
+	height: 82px;
+}
+
+.estiloareatexto2 {
+	width: 342px;
+	padding: 4px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	border: 1px solid #739E6C;
+	border-radius: 6px; 
+	height: 62px;
+}
+.boton{
+        font-size:16px;
+        font-weight:bold;
+        color:white;
+        background:#466B00;
+        border: 0;
+		border-radius: 8px; 
+        width:120px;
+        height:28px;
+}
+.boton2{
+        font-size:16px;
+        font-weight:bold;
+        color:white;
+        background:#466B00;
+        border: 0;
+		border-radius: 8px; 
+        width:150px;
+        height:28px;
+}
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
