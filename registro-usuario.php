@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+include("save_user.php");
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +51,7 @@ include("conexion.php");
 			<div class="box">
             <div class="call-to-action">
 			<h3>FORMULARIO DE REGISTRO</h3>
-			<form name="login" method="POST" role="form" action="save_user.php">
+			<form name="login" method="POST" role="form" action="registro-usuario.php">
             <div class="form-group">
              	<label>Nombres <span class="required">*</span></label>
 				<input type="text" name="nombres" class="form-control">
@@ -66,17 +67,9 @@ include("conexion.php");
             <div class="form-group">
              	<label>Perfil <span class="required">*</span></label>
 				<select name="perfil" class="form-control">
-
 				<?php   
-                $sql = "SELECT * FROM perfil";
-                $data = mysqli_query($conexion, $sql);
-                
-                while ($row = mysqli_fetch_assoc($data)){ ?>
-                <option value=<?= $row["id_perfil"]?> > 
-					<?= $row["nombre"]  ?>
-				</option>	
-				<?php } ?>
-
+					include("select-perfil.php");
+				?>
                 </select>
             </div>
 			<div class="form-group">
