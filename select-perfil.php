@@ -1,6 +1,6 @@
 <?php
-$sql = "SELECT * FROM perfil";
-$data = mysqli_query($conexion, $sql);
+include ("statements.php");
+$data = mysqli_query($conexion, $get_perfil_list);
 
 while ($row = mysqli_fetch_assoc($data)) { 
 ?>

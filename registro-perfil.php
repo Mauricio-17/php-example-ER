@@ -1,5 +1,4 @@
 <?php 
-	include("save_profile.php");
 ?>
 
 <!DOCTYPE html>
