@@ -28,7 +28,7 @@ while ($row = mysqli_fetch_assoc($data)) {
             </form>
         </td>
         <td width="50">
-            <form action="actions_personal.php" method="POST">
+            <form action="listar-usuario.php" method="POST">
                 <input type="hidden" name="id" value=<?= $row["id_personal"] ?>>
                 <input type="submit" name="delete" value="Delete" class="btn btn-danger">
             </form>

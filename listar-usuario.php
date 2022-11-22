@@ -12,6 +12,14 @@ if (isset($_REQUEST['edition'])) { // el nombre "edition" lo lleva asignado en e
     mysqli_query($conexion, $update_usuario);
     
 }
+if (isset($_REQUEST['delete'])) {// el nombre "delete" lo lleva asignado en el atributo name del input tipo submit
+
+    $id = $_POST["id"];
+    $delete_personal_by_id = "DELETE FROM personal WHERE id_personal = $id ;";
+
+    mysqli_query($conexion, $delete_personal_by_id);
+
+}
 ?>
 
 <!DOCTYPE html>

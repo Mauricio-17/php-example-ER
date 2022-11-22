@@ -2,15 +2,7 @@
 // AQUÍ SE REALIZA EL PROCESO DE ELIMINACIÓN Y EDICIÓN SEGÚN EL NOMBRE DEL SUBMIT QUE RECIBAN AMBAS CONDICIONES
 include("conexion.php");
 
-if (isset($_REQUEST['delete'])) {// el nombre "delete" lo lleva asignado en el atributo name del input tipo submit
-
-    $id = $_POST["id"];
-    $delete_personal_by_id = "DELETE FROM personal WHERE id_personal = $id ;";
-
-    mysqli_query($conexion, $delete_personal_by_id);
-    echo '<h1 style="color:green">Deleted successfully </h1>';
-
-} else if (isset($_REQUEST['edit'])) {// el nombre "edit" lo lleva asignado en el atributo name del input tipo submit
+if (isset($_REQUEST['edit'])) {// el nombre "edit" lo lleva asignado en el atributo name del input tipo submit
     $id_personal = $_POST["id_personal"];
     $name = $_POST["name"];
     $lastname = $_POST["lastname"];
